@@ -23,7 +23,7 @@ export default ts.config(
 		}
 	},
 	{
-		files: ['**/*.svelte'],
+		files: ['**/*.svelte', '**/*.ts'],
 
 		languageOptions: {
 			parserOptions: {
@@ -32,6 +32,6 @@ export default ts.config(
 		}
 	},
 	{
-		ignores: ['node_modules', 'public', 'dist']
+		ignores: ['node_modules/*', 'public', 'dist']
 	}
 );
